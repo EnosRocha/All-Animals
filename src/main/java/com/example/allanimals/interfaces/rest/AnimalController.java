@@ -1,4 +1,4 @@
-package com.example.allanimals.rest;
+package com.example.allanimals.interfaces.rest;
 
 import com.example.allanimals.application.dto.AnimalRequestDto;
 import com.example.allanimals.application.dto.AnimalResponseDto;
