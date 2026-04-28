@@ -5,10 +5,12 @@ import com.example.allanimals.domain.repositories.AnimalRepository;
 import com.example.allanimals.infrastructure.persistence.jpa.entities.AnimalEntity;
 import com.example.allanimals.infrastructure.persistence.jpa.mappers.AnimalMapperInfra;
 import com.example.allanimals.infrastructure.persistence.jpa.respositories.AnimalInfraRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Repository
 public class AnimalRepositoryImpl implements AnimalRepository {
 
     private final AnimalInfraRepository animalInfraRepositor;

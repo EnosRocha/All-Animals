@@ -4,7 +4,7 @@ import com.example.allanimals.infrastructure.persistence.jpa.entities.AnimalEnti
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
+
 public interface AnimalInfraRepository extends JpaRepository<AnimalEntity, Long>{
 
 
