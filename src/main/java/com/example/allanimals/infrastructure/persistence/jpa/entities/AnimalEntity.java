@@ -46,4 +46,8 @@ public class AnimalEntity {
 
     @Column(name = "endereco_do_animal")
     private String endereco;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "tutor_id", nullable = true)
+    private TutorEntity tutor;
 }

@@ -6,6 +6,7 @@ import com.example.allanimals.domain.model.entities.Tutor;
 import com.example.allanimals.domain.repositories.TutorRepository;
 
 import java.util.List;
+import java.util.UUID;
 
 public class TutorService {
 
@@ -20,6 +21,14 @@ public class TutorService {
 
     }
 
+
+    public Tutor getTutor(UUID id) {
+
+        Tutor tutorEncontrado = tutorRepository.getTutor(id);
+
+        return tutorEncontrado;
+
+    }
 
     public List<Tutor> getAllTutors() {
         List<Tutor> result = tutorRepository.getAllTutors();
@@ -36,7 +45,7 @@ public class TutorService {
     }
 
 
-    public void deleteTutor(Long id) {
+    public void deleteTutor(UUID id) {
         tutorRepository.delete(id);
     }
 }

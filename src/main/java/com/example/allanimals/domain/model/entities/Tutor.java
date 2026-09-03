@@ -4,8 +4,19 @@ import com.example.allanimals.domain.model.objectValue.Email;
 import com.example.allanimals.domain.model.objectValue.Telefone;
 
 import java.util.Date;
+import java.util.UUID;
 
 public class Tutor {
+
+    private UUID tutorId;
+
+    public UUID getTutorId() {
+        return tutorId;
+    }
+
+    public void setTutorId(UUID tutorId) {
+        this.tutorId = tutorId;
+    }
 
     private String name;
     private String password;
@@ -63,7 +74,7 @@ public class Tutor {
         this.email = email;
     }
 
-    public Tutor(String name, String password, Date birthday, Email email) {
+    public Tutor() {
         this.name = name;
         this.password = password;
         this.birthday = birthday;

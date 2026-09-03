@@ -4,12 +4,14 @@ import com.example.allanimals.domain.model.entities.Animal;
 import com.example.allanimals.domain.model.entities.Tutor;
 
 import java.util.List;
+import java.util.UUID;
 
 public interface TutorRepository {
 
     void save(Tutor tutor);
-    void delete(Long id);
+    void delete(UUID id);
     Tutor update(Tutor tutor);
     List<Tutor> getAllTutors();
-    Tutor getTutor(Long id);
+    Tutor getTutor(UUID id);
+
 }

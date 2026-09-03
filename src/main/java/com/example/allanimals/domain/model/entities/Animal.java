@@ -3,6 +3,8 @@ package com.example.allanimals.domain.model.entities;
 import com.example.allanimals.domain.model.enums.TipoAnimal;
 import com.example.allanimals.domain.model.objectValue.RegistroAnimal;
 
+import java.util.UUID;
+
 public class Animal {
     private String name;
     private TipoAnimal tipoAnimal;
@@ -14,7 +16,15 @@ public class Animal {
     private Integer donoId;
     private String descricao;
     private String endereco;
+    private UUID tutorId;
 
+    public UUID getTutorId() {
+        return tutorId;
+    }
+
+    public void setTutorId(UUID tutorId) {
+        this.tutorId = tutorId;
+    }
 
     public String getEndereco() {
         return endereco;
