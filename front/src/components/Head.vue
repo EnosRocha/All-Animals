@@ -29,12 +29,12 @@ function nextVideo() {
                     🐾 PETinhos
                 </div>
                 <ul class="navLinks">
-                    <li><router-link to="/">Home</router-link></li>
-                    <li><router-link to="/about">Sobre</router-link></li>
+                    <li><Router-link to="/">Home</Router-link></li>
+                    <li><Router-link to="/about">Sobre</Router-link></li>
                 </ul>
                 <div class="navAuth">
-                    <router-link to="/login" class="btnLogin">Entrar</router-link>
-                    <router-link to="/signup" class="btnSignup">Cadastrar</router-link>
+                    <Router-link to="/login" class="btnLogin">Entrar</Router-link>
+                    <Router-link to="/signup" class="btnSignup">Cadastrar</Router-link>
                 </div>
             </nav>
 
