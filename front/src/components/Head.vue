@@ -42,7 +42,7 @@ function nextVideo() {
             <div class="hero">
                 <h1>Encontre seu novo <span class="highlight">melhor amigo</span></h1>
                 <p>Adote um pet e transforme duas vidas</p>
-                <router-link to="/animals" class="btnCta">Ver animais disponíveis</router-link>
+                <router-link to="/ShowPets" class="btnCta">Ver animais disponíveis</router-link>
             </div>
 
         </div>
